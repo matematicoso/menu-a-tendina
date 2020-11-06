@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <title>Prova</title>
+    <style>
+    a{
+      text-decoration: none;
+      margin:20px;
+      color:black;
+    }
+      div {
+        width:100%;
+      }
+      h1{
+        color:#750505;
+        text-align:center;
+        font-size:7vw;
+        margin-top:0px;
+        margin-bottom:0px;
+      }
+      .Primo-livello>a, .Secondo-livello>a{
+        padding-left:1vw;
+        padding-right:1vw;
+        padding-top:0.5vw;
+        padding-bottom:0.5vw;
+        border:1px solid black;
+      }
+      .Terzo-livello{
+        display: none;
+        position: absolute;
+        border:1px solid black;
+        width:99vw;
+        transform:translateY(1vw);
+      }
+      .Quarto-livello{
+        display: none;
+        width:15vw;
+      }
+      .Quinto-livello{
+        display: none;
+      }
+      .Secondo-livello:hover .Terzo-livello, .Quarto-livello{
+        display:block;
+        left:0px;
+        font-size:1vw;
+        line-height:200%;
+      }
+      .Quarto-livello:hover .Quinto-livello{
+        display:inline;
+        position: absolute;
+        right:0px;
+        width:90%;
+      }
+      .Primo-livello{
+        display:inline;
+        position: absolute;
+        font-size:1.5vw;
+        width:99vw;
+        text-align:center;
+      }
+      .Secondo-livello{
+        display:inline;
+        padding-bottom:2vw;
+        text-align:left;
+      }
+      .linea{
+        border-top:2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Icaro</h1>
+      <nav>
+        <div class="linea">
+        </div><br>
+        <div class="Primo-livello">
+          <a href="#">Esplora</a>
+          <div class="Secondo-livello">
+            <a href="#">Materie</a>
+            <div class="Terzo-livello">
+              <div class="Quarto-livello">
+                <a href="#">sottomenu1</a>
+                <div class="Quinto-livello">
+                  <a href="#">sottosottomenu1</a>
+                  <a href="#">sottosottomenu2</a>
+                  <a href="#">sottosottomenu3</a>
+                  <a href="#">sottosottomenu4</a>
+                </div>
+              </div>
+              <a href="#">sottomenu2</a><br>
+              <a href="#">sottomenu3</a><br>
+              <a href="#">sottomenu4</a><br>
+              <a href="#">sottomenu5</a>
+            </div>
+          </div>
+          <a href="#">Giornalino scolastico</a>
+          <a href="#">Chi siamo</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
