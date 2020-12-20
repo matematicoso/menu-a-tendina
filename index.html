@@ -9,7 +9,6 @@
         margin:0px;
         font-family: 'Playfair Display','Cormorant Garamond',serif;
         text-align:center;
-
       }
       h1{
         color:#750505;
@@ -47,17 +46,13 @@
         transform:translateX(-40%);
         display:none;
       }
-      #pulsante:checked + label>img,#pulsante:checked + label>h1{
+      #pulsante:checked ~ *{
         display:none;
       }
-      #pulsante:checked + label>.menu{
+      #pulsante:checked ~ .menu{
         display:inline-block;
       }
-      .ritorna{
-        font-size:15vw;
-        padding:7.7% 0 7.7% 0;
-        display:block;
-      }
+
       .linea{
         margin-left:7%;
         border-top:4px solid black;
@@ -72,22 +67,36 @@
         float: left;
         transform:translateY(-35%);
       }
+      .comandi{
+        display:inline-block;
+      }
+      .non-active-undo{
+        float:left;
+        width:20%;
+      }
+      .home{
+        float:right;
+        width:20%;
+      }
     </style>
   </head>
   <body>
     <input type="checkbox" id="pulsante"/>
+    <h1>ICARO</h1>  
+    <img src="Icaro.svg" class="logo" alt="Logo">
+    <div class="linea"></div>
     <label class="navbar" for="pulsante">
-      <h1>ICARO</h1>
-      <img src="Icaro.svg" class="logo" alt="Logo"><br>
-      <div class="linea"></div>
-      <img src="pallini3.svg" alt="menu" class="pallini">
-      <div class="menu">
-        <a href="#">esplora</a>
-        <a href="#">materie</a>
-        <a href="#">giornalino</a>
-        <a href="#">chi siamo</a>
-        <label class="ritorna" for="pulsante">X</label>
-      </div>
+    <img src="pallini3.svg" alt="menu" class="pallini">
     </label>
+    <div class="menu">
+      <div class="comandi">
+        <img src="disegno freccia indietro non attiva.svg" alt="Torna indietro" class="non-active-undo">
+        <label class="ritorna" for="pulsante"><img src="home.png" alt="Home" class="home"></label>
+      </div>
+      <a href="#">esplora</a>
+      <a href="#">materie</a>
+      <a href="#">giornalino</a>
+      <a href="#">chi siamo</a>
+    </div>
   </body>
 </html>
