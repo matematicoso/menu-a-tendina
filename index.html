@@ -9,6 +9,7 @@
         margin:0px;
         font-family: 'Playfair Display','Cormorant Garamond',serif;
         text-align:center;
+        height:100vh;
       }
       h1{
         color:#750505;
@@ -36,7 +37,7 @@
         text-decoration: none;
         color:black;
         font-size:11vw;
-        height:22.5vh;
+        height:calc(22.5/100*calc(100vh - calc(100vh - 100%)));
         display:block;
         line-height:22.5vh;
       }
@@ -71,15 +72,16 @@
       .comandi{
         display:inline-block;
         width:100%;
+        height:calc(10/100*calc(100vh - calc(100vh - 100%)));
       }
       .non-active-undo{
         float:left;
-        height:10vh;
+        height:100%;
         margin-left:5%;
       }
       .home{
         float:right;
-        height:10vh;
+        height:100%;
         margin-right:5%;
       }
     </style>
