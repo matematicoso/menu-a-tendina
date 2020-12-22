@@ -28,7 +28,7 @@
         margin-left:2%;
 
       }
-      .menu{
+      .menu,.menu1{
         display:none;
         width:100%;
         height:100%;
@@ -36,11 +36,11 @@
       a{
         text-decoration: none;
         color:black;
-        font-size:9vw;
-        padding-bottom:10vh;
+        font-size:7vw;
+        padding-bottom:4vh;
         display:block;
       }
-      #pulsante{
+      input{
         position: absolute;
         width:100%;
         height:13%;
@@ -52,6 +52,18 @@
       }
       #pulsante:checked ~ .menu{
         display:inline-block;
+      }
+      #pulsante1:checked ~ .menu{
+        display:none;
+      }
+      #pulsante1:checked ~ .menu1{
+        display:inline-block;
+      }
+      #pulsante:not(:checked) ~ .menu1{
+        display:none!important;
+      }
+      #pulsante:not(:checked) ~ .heading{
+        display:inline-block!important;
       }
 
       .linea{
@@ -93,15 +105,29 @@
         display:table-cell;
         vertical-align:middle;
       }
+      h3{
+        text-decoration: none;
+        color:black;
+        font-size:7vw;
+        padding-bottom:4vh;
+        display:block;
+        font-weight:normal;
+        margin:0;
+      }
     </style>
   </head>
   <body>
     <input type="checkbox" id="pulsante"/>
-    <h1>ICARO</h1>
-    <img src="Icaro.svg" class="logo" alt="Logo">
-    <div class="linea"></div>
-    <label class="navbar" for="pulsante">
-    <img src="pallini3.svg" alt="menu" class="pallini">
+    <input type="checkbox" id="pulsante1"/>
+    <div class="heading">
+      <h1>ICARO</h1>
+      <img src="Icaro.svg" class="logo" alt="Logo">
+      <div class="linea"></div>
+      <label for="pulsante">
+      <img src="pallini3.svg" alt="menu" class="pallini">
+    </div>
+
+
     </label>
     <div class="menu">
       <div class="comandi">
@@ -110,10 +136,26 @@
       </div>
       <div class="items">
         <span>
-          <a href="#">esplora</a>
-          <a href="#">materie</a>
-          <a href="#">giornalino</a>
-          <a href="#">chi siamo</a>
+          <h3>esplora</h3>
+          <label class="navbar" for="pulsante1"><h3>materie</h3></label>
+          <h3>giornalino</h3>
+          <h3>chi siamo</h3>
+        </span>
+      </div>
+    </div>
+    <div class="menu1">
+      <div class="comandi">
+        <label for="pulsante1"><img src="disegno freccia indietro.svg" alt="Torna indietro" class="non-active-undo"></label>
+        <label for="pulsante"><img src="home.png" alt="Home" class="home"></label>
+      </div>
+      <div class="items">
+        <span>
+          <h3>ottomenu1</h3>
+          <label for="pulsante1"><h3>sottomenu2</h3></label>
+          <h3>sottomenu3</h3>
+          <h3>sottomenu4</h3>
+          <h3>sottomenu5</h3>
+          <h3>sottomenu6</h3>
         </span>
       </div>
     </div>
