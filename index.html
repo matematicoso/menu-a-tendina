@@ -6,97 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prova</title>
     <style>
-    body>div{
-      display:none;
-    }
-    a{
-      text-decoration: none;
-      margin:20px;
-      color:black;
-      font-family: 'EB Garamond','Cormorant Garamond',serif;
-    }
-    .Quinto-livello>a{
-      display:inline-block;
-      margin:0 0 0 7.5%;
-    }
-      div {
-        width:100%;
-      }
-      h1{
-        color:#750505;
-        text-align:center;
-        font-size:7vw;
-        margin-top:0px;
-        margin-bottom:0px;
-        font-family: 'Playfair Display','Cormorant Garamond',serif;
-        display:inline-block;
-      }
-      .Primo-livello>a, .Secondo-livello>a{
-        padding-left:1.2vw;
-        padding-right:1.2vw;
-        padding-top:0.5vw;
-        padding-bottom:0.5vw;
-        border:1px solid black;
-        margin:0;
-        width:10%;
-        text-decoration: none;
-        font-family: 'EB Garamond','Cormorant Garamond',serif;
-        text-align:center;
-        display:inline-block;
-      }
-      .Terzo-livello{
-        display: none;
-        position: absolute;
-        border:1px solid black;
-        width:50%;
-        transform:translateY(1vw);
-      }
-      .Quarto-livello{
-        display: none;
-        width:26%;
-      }
-      .Quinto-livello{
-        display: none;
-      }
-      .Secondo-livello:hover .Terzo-livello, .Quarto-livello{
-        display:block;
-        right:25vw;
-        font-size:1vw;
-        line-height:200%;
-      }
-      .Quarto-livello:hover .Quinto-livello{
-        display:inline;
-        position: absolute;
-        right:0px;
-        width:76%;
-      }
-      .Primo-livello{
-        display:inline-block;
-        font-size:1.5vw;
-        width:100%;
-        text-align:center;
-        margin:0px;
-        padding:0px;
-      }
-      .Secondo-livello{
-        display:inline;
-        padding-bottom:2vw;
-        text-align:left;
-      }
-      .linea{
-        border-top:2px solid black;
-        width:50%;
-        margin:auto;
-      }
-      html,body{
-        margin:0px;
-        text-align:center;
-      }
-      .Logo{
-        width:13%;
-        float: left;
-        left:30%;
-        position: relative;
+      @media (min-width:601px){
+        body>div{
+          display:none;
+        }
+        a{
+          text-decoration: none;
+          margin:20px;
+          color:black;
+          font-family: 'EB Garamond','Cormorant Garamond',serif;
+        }
+        .Quinto-livello>a{
+          display:inline-block;
+          margin:0 0 0 7.5%;
+        }
+          div {
+            width:100%;
+          }
+          h1{
+            color:#750505;
+            text-align:center;
+            font-size:7vw;
+            margin-top:0px;
+            margin-bottom:0px;
+            font-family: 'Playfair Display','Cormorant Garamond',serif;
+            display:inline-block;
+          }
+          .Primo-livello>a, .Secondo-livello>a{
+            padding-left:1.2vw;
+            padding-right:1.2vw;
+            padding-top:0.5vw;
+            padding-bottom:0.5vw;
+            border:1px solid black;
+            margin:0;
+            width:10%;
+            text-decoration: none;
+            font-family: 'EB Garamond','Cormorant Garamond',serif;
+            text-align:center;
+            display:inline-block;
+          }
+          .Terzo-livello{
+            display: none;
+            position: absolute;
+            border:1px solid black;
+            width:50%;
+            transform:translateY(1vw);
+          }
+          .Quarto-livello{
+            display: none;
+            width:26%;
+          }
+          .Quinto-livello{
+            display: none;
+          }
+          .Secondo-livello:hover .Terzo-livello, .Quarto-livello{
+            display:block;
+            right:25vw;
+            font-size:1vw;
+            line-height:200%;
+          }
+          .Quarto-livello:hover .Quinto-livello{
+            display:inline;
+            position: absolute;
+            right:0px;
+            width:76%;
+          }
+          .Primo-livello{
+            display:inline-block;
+            font-size:1.5vw;
+            width:100%;
+            text-align:center;
+            margin:0px;
+            padding:0px;
+          }
+          .Secondo-livello{
+            display:inline;
+            padding-bottom:2vw;
+            text-align:left;
+          }
+          .Linea{
+            border-top:2px solid black;
+            width:50%;
+            margin:auto;
+          }
+          html,body{
+            margin:0px;
+            text-align:center;
+          }
+          .Logo{
+            width:13%;
+            float: left;
+            left:30%;
+            position: relative;
+          }
       }
       @media (max-width:600px) {
         header{
@@ -142,10 +144,11 @@
         a{
           text-decoration: none;
           color:black;
+          margin:0;
           }
         .linea{
           margin-left:7%;
-          border-top:4px solid black;
+          border-top:2px solid black;
           width:76%;
           float: left;
           display:inline-block;
@@ -201,7 +204,7 @@
       <img src="Icaro.svg" class="Logo" alt="Logo">
       <h1>ICARO</h1>
       <nav>
-        <div class="linea">
+        <div class="Linea">
         </div><br>
         <div class="Primo-livello">
           <a href="#">esplora</a><!--
